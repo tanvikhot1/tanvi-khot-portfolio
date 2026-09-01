@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tanvi Khot | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7fb;
+    color:#1e293b;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+    background:#0f172a;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* HOME */
+
+.hero{
+    min-height:90vh;
+    padding:80px 8%;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#dbeafe,#ffffff);
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.small-text{
+    color:#2563eb;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.hero h1 span{
+    color:#2563eb;
+}
+
+.hero h2{
+    font-size:25px;
+    color:#475569;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:700px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:13px 25px;
+    border-radius:7px;
+    text-decoration:none;
+    margin-right:10px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* COMMON */
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:35px;
+    color:#0f172a;
+    margin-bottom:45px;
+}
+
+.subtitle{
+    text-align:center;
+    max-width:700px;
+    margin:-25px auto 40px;
+    color:#64748b;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+}
+
+.about-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* EDUCATION */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(15,23,42,0.10);
+    border-top:4px solid #2563eb;
+}
+
+.card h3{
+    color:#2563eb;
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+/* SKILLS */
+
+.skills{
+    background:#eef2f7;
+    text-align:center;
+}
+
+.skill{
+    display:inline-block;
+    background:white;
+    padding:13px 23px;
+    margin:8px;
+    border-radius:25px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* ANALYTICS */
+
+.analytics{
+    background:#0f172a;
+    color:white;
+}
+
+.analytics .title{
+    color:white;
+}
+
+.analytics-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+.analytics-items{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:35px;
+}
+
+.analytics-item{
+    background:#1e293b;
+    width:210px;
+    padding:25px;
+    border-radius:10px;
+}
+
+.analytics-item h3{
+    color:#60a5fa;
+    margin-bottom:8px;
+}
+
+/* PROJECTS */
+
+.project-card{
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-7px);
+}
+
+/* CONTACT */
+
+.contact{
+    background:white;
+    text-align:center;
+}
+
+.contact-box{
+    max-width:650px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero h2{
+        font-size:20px;
+    }
+
+    .hero{
+        padding:60px 7%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="logo">Tanvi Khot</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#analytics">Analytics</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="small-text">WELCOME TO MY PORTFOLIO</div>
+
+<h1>Hi, I'm <span>Tanvi</span></h1>
+
+<h2>MCA Student | Statistics Graduate | Aspiring Data Analyst</h2>
+
+<p>
+I am passionate about technology, statistics and data.
+I am currently pursuing MCA and developing my skills
+in programming, data analytics and web development.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+<a href="#analytics" class="btn">Explore Analytics</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about-box">
+
+<p>
+I have completed my B.Sc. in Statistics and I am currently
+pursuing Master of Computer Applications (MCA).
+</p>
+
+<br>
+
+<p>
+My Statistics background has developed my interest in
+data, numbers and analytical thinking. Through MCA,
+I am building my knowledge of computer applications,
+programming and technology.
+</p>
+
+<br>
+
+<p>
+My goal is to combine Statistics and Computer Applications
+to work on real-world data and create meaningful solutions.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>MCA</h3>
+
+<p><b>Master of Computer Applications</b></p>
+
+<br>
+
+<p>Currently Pursuing</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>B.Sc. Statistics</h3>
+
+<p><b>Bachelor of Science in Statistics</b></p>
+
+<br>
+
+<p>Completed</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section class="skills" id="skills">
+
+<h2 class="title">Skills & Interests</h2>
+
+<span class="skill">Statistics</span>
+<span class="skill">Data Analytics</span>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">SQL</span>
+<span class="skill">Programming</span>
+<span class="skill">Data Visualization</span>
+
+</section>
+
+
+<!-- DATA ANALYTICS -->
+
+<section class="analytics" id="analytics">
+
+<h2 class="title">Data Analytics</h2>
+
+<div class="analytics-box">
+
+<p>
+My Statistics background gives me a strong foundation
+for understanding and analysing data.
+</p>
+
+<p>
+I am interested in transforming raw data into useful
+information, patterns and insights.
+</p>
+
+<div class="analytics-items">
+
+<div class="analytics-item">
+<h3>Statistics</h3>
+<p>Understanding data and statistical concepts.</p>
+</div>
+
+<div class="analytics-item">
+<h3>Data Cleaning</h3>
+<p>Preparing data for meaningful analysis.</p>
+</div>
+
+<div class="analytics-item">
+<h3>Visualization</h3>
+<p>Presenting data in a clear and useful way.</p>
+</div>
+
+<div class="analytics-item">
+<h3>SQL</h3>
+<p>Working with databases and data.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="title">My Projects</h2>
+
+<p class="subtitle">
+My academic and Data Analytics projects will be added here
+as I learn and complete them.
+</p>
+
+<div class="cards">
+
+<div class="card project-card">
+
+<h3>Student Performance Analysis
+</h3>
+
+<p>
+A Data Analytics project  focused on analysing student performance and identifying factors that influence academic results. The project uses data analysis, statistical methods and visualization to discover meaningful patterns and insights.
+Tools: Statistics | Excel | SQL | Python | Data Visualization
+</p>
+
+</div>
+
+
+<div class="card project-card">
+
+<h3>Sales Data Analysis</h3>
+
+<p>A Data Analytics project focused on analysing sales data, understanding sales trends and identifying useful business insights. The project helps to understand product performance, sales patterns and overall business performance.</p> <p> <strong>Tools:</strong> Excel | SQL | Python | Data visualization </p> 
+
+</div>
+
+
+<div class="card project-card">
+
+<h3>MCA Academic Project</h3>
+
+<p>
+An academic project developed as part of my MCA studies,
+focused on applying programming, database management and
+data analytics concepts to solve a real-world problem.
+</p>
+
+<p>
+<strong>Technologies:</strong> HTML | CSS | SQL | Python
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact-box">
+
+<p>
+Interested in learning, building projects and exploring
+opportunities in technology and Data Analytics.
+</p>
+
+<br>
+
+<p>Email: Coming Soon</p>
+
+<p>LinkedIn: Coming Soon</p>
+
+<p>GitHub: Coming Soon</p>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Tanvi Khot | MCA & Data Analytics Portfolio</p>
+
+</footer>
+
+</body>
+</html>
